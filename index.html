@@ -10,34 +10,54 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!--link to the css file-->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <header>
+    <header class="flex flex-col content-center items-center">
         <h2>Option</h2>
-        <section>
-            <button>Create a ennemy</button>
-            <button>Reset your character</button>
-            <button>Reset the ennemy</button>
+        <section class="flex flex-row justify-around w-screen">
+            <button class="rpgButton">Create a ennemy</button>
+            <button class="rpgButton">Reset your character</button>
+            <button class="rpgButton">Reset the ennemy</button>
         </section>
     </header>
     <main>
-        <section class="flex flex-row">
+        <section class="flex flex-row justify-around w-screen">
             <!--left side of the screen-->
-            <section>
+            <section class="w-1/3 h-3/5 flex flex-col content-center items-center">
                 <figure class=""><img src="./res/player-caracter.png" alt="player-caracter"></figure>
+                <div class="healthBar flex flex-row justify-around">
+                    <p>100</p>
+                    <p class="px-2"> / </p>
+                    <p>100</p>
+                </div>
             </section>
             <!--midle-->
-            <section class="">
+            <section class="midlemain w-1/3 h-3/5">
                 <ul class="combatLogStyle" id="combatLog">
 
                 </ul>
             </section>
             <!--right side of the screen-->
-            <section>
-                <figure class=""><img src="./res/orc-caracter.png" alt="orc-caracter"></figure>
+            <section class="w-1/3 h-3/5 flex flex-col content-center items-center">
+                <figure class="rightmain"><img src="./res/orc-caracter.png" alt="orc-caracter"></figure>
+                <div class="healthBar flex flex-row justify-around">
+                    <p>100</p>
+                    <p class="px-2"> / </p>
+                    <p>100</p>
+                </div>
             </section>
         </section>
+        <!--bottom of the screen-->
+        <section class="flex flex-row w-screen justify-around">
+            <button class="rpgButton" id="button Attack">Attack</button>
+            <button class="rpgButton" id="buttonDefence">Defence</button>
+            <button class="rpgButton" id="buttonBluf">Bluf</button>
+            <button class="rpgButton" id="buttonReset">Reset Log</button>
+        </section>
+        <footer>
+            <article><p>Copyright</p></article>
+        </footer>
     </main>
 </body>
 </html>
