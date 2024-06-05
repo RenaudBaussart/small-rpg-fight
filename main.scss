@@ -1,5 +1,6 @@
 //base
 @import "styles/base/_reset.scss";
+@import "styles/base/_button.scss";
 //components
 //layout
 @import "styles/layout/_header.scss";
@@ -10,6 +11,6 @@
 //themes
 //utils
 @import "styles/utils/_variables.scss";
-@import "styles/utils/_basic-mixin.scss";
+@import "styles/utils/_mixin.scss";
 @import "styles/utils/_fonction.scss";
 //vendors
